@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "X Hide For You",
+  "version": "1.0.0",
+  "description": "ホームの「おすすめ」を隠し、「フォロー中」に自動で切り替えます。",
+  "content_scripts": [
+    {
+      "matches": ["https://x.com/*", "https://www.x.com/*"],
+      "css": ["content.css"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}

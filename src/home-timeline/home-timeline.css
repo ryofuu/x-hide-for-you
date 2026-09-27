@@ -1,0 +1,9 @@
+[data-x-hide-for-you] {
+  display: none !important;
+}
+
+/* Keep the feed out of view until a safe home tab is selected. */
+[data-x-block-home-feed] section,
+[data-x-block-home-feed] [data-testid="cellInnerDiv"] {
+  visibility: hidden !important;
+}
